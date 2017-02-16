@@ -150,7 +150,7 @@ def main():
     else:
         bitstream_id = get_bitstream_id()
         largefile_path = get_largefile_path()
-    print "Bitstream ID: %d" % bitstream_id
+    print "\nBitstream ID: %d" % bitstream_id
 
     assetstore_path = get_assetstore_path(bitstream_id)
     dummyfile, largefile = None, None
@@ -174,10 +174,10 @@ def main():
     result = verify_file(bitstream_id, replaced_file)
 
     if result == True:
-        print "SUCCESS: %s can be deleted." % largefile_path
+        print ">>>SUCCESS: %s can be deleted." % largefile_path
         sys.exit(0)
     else:
-        print "FAILURE: please report the output of this script to devs."
+        print ">>>FAILURE: please report the output of this script to devs."
         sys.exit(1)
 
 if __name__ == '__main__':
