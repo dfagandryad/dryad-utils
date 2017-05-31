@@ -159,10 +159,10 @@ def main():
     result = verify_file(bitstream_id, replaced_file)
 
     if result == True:
-        print "SUCCESS: %s can be deleted." % largefile_path
+        print "SUCCESS: %s can be deleted.\n" % largefile_path
         sys.exit(0)
     else:
-        print "FAILURE: please report the output of this script to devs."
+        print "FAILURE: please report the output of this script to devs.\n"
         sys.exit(1)
 
 if __name__ == '__main__':
